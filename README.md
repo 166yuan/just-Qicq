@@ -1,7 +1,3 @@
-# chat-example
+# 关于qicq
+###本人原创作品，现在正在完善中。到时候放出时力求达到惊艳的效果
 
-This is the source code for a very simple chat example used for 
-the [Getting Started](http://socket.io/get-started/chat/) guide 
-of the Socket.IO website.
-
-Please refer to it to learn how to run this application.
