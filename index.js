@@ -118,6 +118,7 @@ io.on('connection', function (socket) {
     console.log('Disconnect');
   });
   socket.on('close',function(data){
+        console.log("close connect");
         if(data!=null){
           userMap.remove(data);
           socketMap.remove(data);
@@ -181,7 +182,6 @@ function getUser2(account,socket){
   return isfind;
 }
 function addToList(user,socket){
-
   var us=userMap.get(user.account);
   if(typeof(us)=='undefined'){
     userMap.put(user.account,user);

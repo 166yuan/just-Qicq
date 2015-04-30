@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/animate.min.css"/>
 </head>
 <body >
-<div class="login-box animated bounceIn">
+<div class="login-box animated bounceIn hidden">
     <div class="logo-box"><img src="img/logo.png"  height="90px"/></div>
     <p class="login_error hidden">用户名或者密码错误</p>
     <div class="login-wrap">
@@ -77,8 +77,8 @@
 <img src="img/left2.png"  alt="返回"/>
         <span style="margin-left: 2px">消息</span>
         </a>
-        <span class="to-name" style="margin-left: 28%;font-size: large">cupid！！</span>
-        <img src="img/user.png" alt="头像"  style="height: 30px;width: 30px;margin-left: 20%"/>
+        <span class="to-name" style="/* margin-left: 28%; */font-size: large">cupid！！</span>
+        <img src="img/user.png" alt="头像" style="position: absolute;height: 30px;width: 30px;right: 6%;top: 0.7em;">
     </div>
     <div class="chat-area" >
         <ul id="single-chat" class="user-box">
@@ -99,7 +99,7 @@
         <button class="send" id="send">发送</button>
     </div>
 </div>
-<div class="chat-ui-multi hidden">
+<div class="chat-ui-multi">
     <div class="list-header2">
         <a class="back" href="#" id="multiChatBack">
             <img src="img/left2.png"  alt="返回"/>
@@ -138,7 +138,6 @@
                 $('register-box').addClass('hidden');
                 $('login-box').removeClass('hidden');
             });
-
     var step=0;
     function message1(from,to,content){
         var message=new Object();
@@ -222,6 +221,7 @@
         socket.on('connect', function (data) {
 
         });
+
         socket.on("is login",function(data){
                 if(data.status){
                     $('.login-box').removeClass('bounceIn');
@@ -459,6 +459,21 @@
                     socket.emit("register",account,passwd);
                 }
         );
+
     });
 
 </script>
+<!--
+<script language="JavaScript">
+    var _t;
+    window.onbeforeunload = function()
+    {
+        setTimeout(function(){_t = setTimeout(onunloadcancel, 0)}, 0);
+        return "真的离开?";
+    }
+    window.onunloadcancel = function()
+    {
+        clearTimeout(_t);
+        alert("取消离开");
+    }
+</script>-->
