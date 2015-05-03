@@ -277,9 +277,12 @@ width: 35px;
 }
 .emojiWrap{
     width: 100%;
-    height: 3em;
+    height: 8.4em;
 }
 #Iemoji{
+    position: absolute;
+}
+#Iemoji2{
     position: absolute;
 }
 .back{
