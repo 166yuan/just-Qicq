@@ -55,7 +55,7 @@
         <button>搜索</button>
     </div>
     <div class="list-adapter">
-        <ul id="chatlist">
+        <ul id="chatlist" >
 
         </ul>
     </div>
@@ -72,7 +72,7 @@
 
     </div>
 </div>
-<div class="chat-ui hidden">
+<div class="chat-ui animated hidden">
     <div class="list-header2">
         <a class="back" href="#" id="singleChatBack">
 <img src="img/left2.png"  alt="返回"/>
@@ -97,6 +97,7 @@
     <div class="input-area">
         <div>
         <img src="img/emoji.png" id="Iemoji" alt=""/>
+            <img src="img/shake.png" class="shakeke">
         <textarea  class="msg-input" id="msg-input"></textarea>
         <button class="send" id="send">发送</button>
     </div>
@@ -106,7 +107,7 @@
     </div>
 
 </div>
-<div class="chat-ui-multi hidden">
+<div class="chat-ui-multi animated hidden">
     <div class="list-header2">
         <a class="back" href="#" id="multiChatBack">
             <img src="img/left2.png"  alt="返回"/>
@@ -132,6 +133,7 @@
     <div class="input-area">
         <div>
             <img src="img/emoji.png" id="Iemoji2" alt=""/>
+            <img src="img/shake.png" class="shakeke">
             <textarea  class="msg-input" id="multi-msg-input"></textarea>
 
             <button class="send" id="multi-send">发送</button>
@@ -325,7 +327,14 @@
         socket.on("forceoffline",function(){
             alert("您的账号在其它地方登录！");
         });
-
+        socket.on("shake it",function(from){
+           if(from==sessionStorage.getItem('talkto')){
+               $('.chat-ui').addClass('tada');
+               setInterval(function(){
+                   $('.chat-ui').removeClass('tada');
+               },2000);
+           }
+        });
         socket.on("register result",function(data){
             if(data.isok==-1){
                 $('.register_error').removeClass('hidden');
@@ -480,6 +489,10 @@
                 }
         );
 
+        $('.shakeke').click(function(){
+                socket.emit("shake",sessionStorage.getItem('account'),sessionStorage.getItem('talkto'));
+                }
+        );
     });
     $('#Iemoji').click(function(){
         $('#emojiWrap').toggleClass('hidden');

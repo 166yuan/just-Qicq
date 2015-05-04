@@ -257,12 +257,11 @@ width: 35px;
 }
 .chat-area{
     width: inherit;
-    height: 83%;
+    height: 84%;
     background: -webkit-linear-gradient(#ace7ef, #e8d9c6); /* Safari 5.1 - 6.0 */
     background: -o-linear-gradient(#ace7ef, #e8d9c6); /* Opera 11.1 - 12.0 */
     background: -moz-linear-gradient(#ace7ef, #e8d9c6); /* Firefox 3.6 - 15 */
     background: linear-gradient(#ace7ef, #e8d9c6);
-    overflow-y: auto;
 }
 .input-area{
 
@@ -281,9 +280,13 @@ width: 35px;
 }
 #Iemoji{
     position: absolute;
+    height: 25px;
+    width: auto;
 }
 #Iemoji2{
     position: absolute;
+    height: 25px;
+    width: auto;
 }
 .back{
     color: #FFFFFF !important;
@@ -317,7 +320,7 @@ li .emoji{
     border-radius: 5px;
     border: none;
     min-height: 1em;
-    margin-left: 18%;
+    margin-left: 23%;
     width: 60%;
 }
 .info-user .use-img{
@@ -444,4 +447,14 @@ li .emoji{
     position: absolute;
     left: 32%;
     top:25%;
+}
+.user-box{
+    overflow-y: auto;
+    height: 90%;
+}
+.shakeke {
+    position: absolute;
+    left: 15%;
+    height: 25px;
+    width: auto;
 }

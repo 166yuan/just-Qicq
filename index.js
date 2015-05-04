@@ -108,6 +108,16 @@ io.on('connection', function (socket) {
         }
       }
   );
+  socket.on("shake",function(from,to){
+        var usocket=socketMap.get(to);
+        if(typeof(usocket)!='undefined'){
+          usocket.emit('shake it',from);
+        }else{
+          console.log("fail to chat!");
+        }
+      }
+  );
+
   //多人聊天广播
   socket.on("broadcast",function(data){
         socket.broadcast.emit("multi talk",data);
