@@ -12,9 +12,15 @@
     }
 
 }
-@media (height:480px) {
-    .nav-aside li{
-        margin-bottom: 0em;
+@media screen and (max-height: 480px) {
+    .login-button{
+        top: 12em !important;
+    }
+    .go-register{
+        top: -2em;
+    }
+    .register-area{
+        height: 90% !important;
     }
 }
 
@@ -65,8 +71,8 @@ width: 100%;
     height: 80px;
     border-radius: 4px;
     position: relative;
-    left: 38%;
     top: 26%;
+    margin: 0 auto;
 }
 
 .login-input{
