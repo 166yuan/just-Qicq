@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/animate.min.css"/>
 </head>
 <body >
-<div class="login-box animated bounceIn">
+<div class="login-box hidden animated bounceIn">
     <div class="logo-box"><img src="img/logo.png"  height="90px"/></div>
     <p class="login_error hidden">用户名或者密码错误</p>
     <div class="login-wrap">
@@ -47,6 +47,7 @@
 </div>
 <div class="user-list hidden animated bounceInDown">
     <div class="list-header">
+        <img src="img/array_left.png" style="float: left;margin-top: 1em;"/>
         <img src="img/pic.jpg" class="my-image"/>
         <span class="myname">银酱</span>
         <span class="link">联系人</span>
@@ -71,6 +72,22 @@
         </div>
 
     </div>
+</div>
+<div class="setting-ui">
+    <div class="list-header">
+        <img src="img/back.png" style="float: left;" alt="返回"/>
+        <h1>设置</h1>
+    </div>
+    <div class="setting-list">
+        <p><span class="setting-tag">用户名</span> <span contenteditable="true" class="setting-content">cupid &nbsp;&nbsp;</span></p>
+        <p><span class="setting-tag">个性签名</span> <span contenteditable="true" class="setting-content">洞爷湖！！！ &nbsp;&nbsp;</span></p>
+        <p><span class="setting-tag">头像</span> <span  class="setting-content" onclick="upload()">点击上传新头像</span><input type="file" class="hidden" id="images"/></p>
+        <p><span class="setting-tag">关于</span> <span  class="setting-content"></span></p>
+    </div>
+    <p class="setting-save">
+        <button class="btn-save">保存</button>
+        <button class="btn-cancel">放弃</button>
+    </p>
 </div>
 <div class="chat-ui animated hidden">
     <div class="list-header2">
@@ -147,6 +164,9 @@
 </html>
 
 <script type="text/javascript">
+    function upload(){
+        $('#images').trigger("click");
+    }
     $('#register-back').click(
             function(){
                 $('register-box').addClass('hidden');
@@ -343,7 +363,6 @@
                 $('.register_error').removeClass('hidden');
                 $('.register_error').html('注册成功，返回登录吧！');
             }
-
         });
         initEmoji();
         $('.emojiWrap img').addClass("emoji");
@@ -469,6 +488,7 @@
                     $('.login-box').removeClass('hidden');
                 }
         );
+
         $('#enter-register').click(function(){
                     var account=$('#reg_account').val();
                     var passwd=$('#reg-passwd').val();

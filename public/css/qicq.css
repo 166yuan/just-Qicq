@@ -50,6 +50,12 @@ html{
     background: -moz-linear-gradient(#e8e8e8, #fafafa); /* Firefox 3.6 - 15 */
     background: linear-gradient(#e8e8e8, #fafafa);
 }
+
+.setting-ui{
+    height: inherit;
+    border: 1px solid;
+    background-color: #f8f9fb;
+}
 html{
 margin: 0 auto;
 width: 100%;
@@ -95,7 +101,7 @@ width: 100%;
 .login-button{
     position: relative;
    display: block;
-    top: 16em;
+    top: 35%;
    margin: 0 auto;
     color: white;
     width: 260px;
@@ -132,6 +138,11 @@ width: 100%;
     height: inherit;
 position: relative;
 border: 1px solid #dee4e9;
+    -webkit-transform: scale(0.5,0.6);
+       -moz-transform: scale(0.5,0.6);
+        -ms-transform: scale(0.5,0.6);
+         -o-transform: scale(0.5,0.6);
+            transform: scale(0.5,0.6);
 }
 .chat-ui{
     height: inherit;
@@ -229,6 +240,7 @@ color: #aaaaaa;
     position: absolute;
     background-color: #f9f9f9;
     bottom:0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
     clear:both;
 }
 .friend-buttom-inner{
@@ -463,4 +475,47 @@ li .emoji{
     left: 15%;
     height: 25px;
     width: auto;
+}
+.setting-list{
+  margin-top: 6%;
+    background-color: #FFFFFF;
+}
+.setting-list p{
+    position: relative;
+    height: 3.5em;
+    border-bottom: 1px solid #E5E5E5;
+    vertical-align: middle;
+}
+.setting-tag{
+    display: inline-block;
+    line-height: 3.5em;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-weight: 700;
+}
+.setting-content{
+    display: inline-block;
+    text-align: right;
+}
+.setting-save{
+    margin-top: 2em;
+}
+
+.btn-save {
+    background-color:#1ab4ed;
+    border: none;
+    border-radius: 3px;
+    color: #FFFFFF;
+    height: 3em;
+    width: 30%;
+    margin-left: 20%;;
+}
+.btn-cancel{
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    color:#1ab4ed ;
+    height: 3em;
+    width: 30%;
+    margin-left: 3%;
 }
