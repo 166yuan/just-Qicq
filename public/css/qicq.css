@@ -295,6 +295,14 @@ width: 35px;
 .emojiWrap{
     width: 100%;
     height: 8.4em;
+    background: url("../img/1.jpg");
+    -moz-background-size:100% 100%;
+    background-size:100% 100%;
+}
+@media screen and (min-width: 330px) {
+    .emojiWrap{
+        height: 9.4em !important;
+    }
 }
 #Iemoji{
     position: absolute;
@@ -518,4 +526,17 @@ li .emoji{
     height: 3em;
     width: 30%;
     margin-left: 3%;
+}
+.face{
+    height: inherit;
+    width: inherit;
+}
+.face li{
+    display: block;
+    height:33.3% ;
+    width: 14.2%;
+    float: left;
+}
+.face li:hover{
+    border: 1px solid #05a8e4;
 }

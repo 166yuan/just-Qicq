@@ -73,7 +73,7 @@
 
     </div>
 </div>
-<div class="setting-ui">
+<div class="setting-ui hidden">
     <div class="list-header">
         <img src="img/back.png" style="float: left;" alt="返回"/>
         <h1>设置</h1>
@@ -89,7 +89,7 @@
         <button class="btn-cancel">放弃</button>
     </p>
 </div>
-<div class="chat-ui animated hidden">
+<div class="chat-ui animated ">
     <div class="list-header2">
         <a class="back" href="#" id="singleChatBack">
 <img src="img/left2.png"  alt="返回"/>
@@ -119,7 +119,9 @@
         <button class="send" id="send">发送</button>
     </div>
         <div class="emojiWrap hidden" id="emojiWrap">
+            <ul class="face" id="face1">
 
+            </ul>
         </div>
     </div>
 
@@ -246,6 +248,8 @@
             console.log("append end");
     }
 
+
+
     $(function(){
         $('textarea').autosize();
         var talkto;
@@ -364,7 +368,8 @@
                 $('.register_error').html('注册成功，返回登录吧！');
             }
         });
-        initEmoji();
+      //  initEmoji();
+        initEmoji2();
         $('.emojiWrap img').addClass("emoji");
         $('.emojiWrap img').bind("click",function(e){
                     var number=$(e.currentTarget).attr("title");
@@ -379,6 +384,13 @@
                     }
 
 
+                }
+        );
+        $('.face li').bind("click",function (e){
+                    var number=$(e.currentTarget).attr("text");
+                    var vals=$('#msg-input').val();
+                    vals=vals+"[emoji:"+number+"]";
+                    $('#msg-input').val(vals);
                 }
         );
 
@@ -540,17 +552,22 @@
        emojiContainer2.appendChild(docFragment);
     }
 
+    function initEmoji2(){
+        for(var i=0;i<=20;i++){
+            $('#face1').append('<li text='+i+'></li>');
+        }
+    }
     function showEmoji(msg) {
         var match, result = msg,
                 reg = /\[emoji:\d+\]/g,
                 emojiIndex,
-                totalEmojiNum = document.getElementById('emojiWrap').children.length;
+                totalEmojiNum = 170;
         while (match = reg.exec(msg)) {
             emojiIndex = match[0].slice(7, -1);
             if (emojiIndex > totalEmojiNum) {
                 result = result.replace(match[0], '[X]');
             } else {
-                result = result.replace(match[0], '<img class="emoji" src="emoji/' + emojiIndex + '.gif" />');//todo:fix this in chrome it will cause a new request for the image
+                result = result.replace(match[0], '<img class="emoji" src="http://7xiwi7.com1.z0.glb.clouddn.com/emoji' + emojiIndex + '.gif" />');
             };
         };
         return result;
