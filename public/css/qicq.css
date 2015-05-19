@@ -292,15 +292,12 @@ width: 35px;
     clear: both;
 
 }
-.emojiWrap{
+.swiper-container{
     width: 100%;
     height: 8.4em;
-    background: url("../img/1.jpg");
-    -moz-background-size:100% 100%;
-    background-size:100% 100%;
 }
 @media screen and (min-width: 330px) {
-    .emojiWrap{
+    .swiper-container{
         height: 9.4em !important;
     }
 }
@@ -527,16 +524,77 @@ li .emoji{
     width: 30%;
     margin-left: 3%;
 }
-.face{
-    height: inherit;
-    width: inherit;
+#face1{
+    background: url("../img/1.jpg");
+    -moz-background-size:100% 100%;
+    background-size:100% 100%;
 }
-.face li{
+#face2{
+    background: url("../img/2.jpg");
+    -moz-background-size:100% 100%;
+    background-size:100% 100%;
+}
+#face3{
+    background: url("../img/3.jpg");
+    -moz-background-size:100% 100%;
+    background-size:100% 100%;
+}
+
+@media screen and(min-height: 660px){
+    .emojiUp{
+        height: 70% !important;
+    }
+}
+@media screen and (max-width: 325px){
+    .emojiUp{
+        height: 61% !important;
+    }
+}
+
+#emoji1{
+    background:url(../img/1.jpg);
+    background-size: 100% 100%;
+}
+#emoji2{
+    background:url(../img/2.jpg);
+    background-size: 100% 100%;
+}
+#emoji3{
+    background:url(../img/3.jpg);
+    background-size: 100% 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.emojiWrap{
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    padding: 0 !important;
+}
+.emojiWrap li{
     display: block;
-    height:33.3% ;
-    width: 14.2%;
     float: left;
+    height: 33%;
+    width: 14%;
 }
-.face li:hover{
-    border: 1px solid #05a8e4;
+.emojiWrap li:hover{
+    border: 1px solid #0088cc;
 }
