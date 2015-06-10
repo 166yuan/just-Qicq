@@ -24,8 +24,8 @@
       <file leaf-file-name="qicq.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qicq.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.34375">
-              <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+            <state vertical-scroll-proportion="-2.515625">
+              <caret line="189" column="13" selection-start-line="189" selection-start-column="8" selection-end-line="189" selection-end-column="13" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -40,13 +40,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qicq.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="qicq.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/qicq.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.0">
-              <caret line="6" column="38" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.33164558">
+              <caret line="112" column="54" selection-start-line="112" selection-start-column="54" selection-end-line="112" selection-end-column="54" />
               <folding>
-                <marker date="1433863440320" expanded="true" signature="17096:17415" placeholder="..." />
+                <marker date="1433898212094" expanded="true" signature="17102:17421" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -62,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qicq.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="qicq.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/qicq.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36">
-              <caret line="557" column="1" selection-start-line="557" selection-start-column="1" selection-end-line="557" selection-end-column="1" />
+            <state vertical-scroll-proportion="27.88">
+              <caret line="559" column="34" selection-start-line="559" selection-start-column="34" selection-end-line="559" selection-end-column="34" />
               <folding>
                 <element signature="e#17103#17361#2" expanded="true" />
                 <element signature="e#17502#17760#2" expanded="true" />
@@ -84,17 +84,16 @@
       <file leaf-file-name="qicq.min.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/qicq.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="237.72">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="24798" selection-start-line="0" selection-start-column="24798" selection-end-line="0" selection-end-column="24798" />
               <folding>
-                <element signature="e#13289#13343#1" expanded="true" />
-                <element signature="e#13686#13740#1" expanded="true" />
-                <element signature="e#14062#14116#1" expanded="true" />
-                <element signature="e#14398#14452#1" expanded="true" />
-                <element signature="e#14795#14849#1" expanded="true" />
-                <element signature="e#15171#15225#1" expanded="true" />
-                <element signature="e#21751#23198#2" expanded="true" />
-                <element signature="e#23353#24797#2" expanded="true" />
+                <element signature="e#13292#13346#1" expanded="true" />
+                <element signature="e#13689#13743#1" expanded="true" />
+                <element signature="e#14065#14119#1" expanded="true" />
+                <element signature="e#14401#14455#1" expanded="true" />
+                <element signature="e#14798#14852#1" expanded="true" />
+                <element signature="e#15174#15228#1" expanded="true" />
+                <element signature="e#21754#23201#2" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -105,16 +104,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="qicq.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/qicq.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="4005" selection-start-line="0" selection-start-column="4005" selection-end-line="0" selection-end-column="4005" />
               <folding />
             </state>
           </provider>
@@ -165,7 +154,6 @@
         <option value="$PROJECT_DIR$/lib/zTool.js" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/lib/models.js" />
-        <option value="$PROJECT_DIR$/public/js/qicq.js" />
         <option value="$PROJECT_DIR$/public/css/swiper.min.css" />
         <option value="$PROJECT_DIR$/public/css/reset.css" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
@@ -173,6 +161,7 @@
         <option value="$PROJECT_DIR$/public/css/temp.css" />
         <option value="$PROJECT_DIR$/qicq.html" />
         <option value="$PROJECT_DIR$/public/css/qicq.css" />
+        <option value="$PROJECT_DIR$/public/js/qicq.js" />
       </list>
     </option>
   </component>
@@ -864,32 +853,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/qicq.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="4005" selection-start-line="0" selection-start-column="4005" selection-end-line="0" selection-end-column="4005" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/qicq.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="38" />
-          <folding>
-            <marker date="1433863440320" expanded="true" signature="17096:17415" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/temp.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -900,25 +863,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/qicq.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="237.72">
+        <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="24798" selection-start-line="0" selection-start-column="24798" selection-end-line="0" selection-end-column="24798" />
           <folding>
-            <element signature="e#13289#13343#1" expanded="true" />
-            <element signature="e#13686#13740#1" expanded="true" />
-            <element signature="e#14062#14116#1" expanded="true" />
-            <element signature="e#14398#14452#1" expanded="true" />
-            <element signature="e#14795#14849#1" expanded="true" />
-            <element signature="e#15171#15225#1" expanded="true" />
-            <element signature="e#21751#23198#2" expanded="true" />
-            <element signature="e#23353#24797#2" expanded="true" />
+            <element signature="e#13292#13346#1" expanded="true" />
+            <element signature="e#13689#13743#1" expanded="true" />
+            <element signature="e#14065#14119#1" expanded="true" />
+            <element signature="e#14401#14455#1" expanded="true" />
+            <element signature="e#14798#14852#1" expanded="true" />
+            <element signature="e#15174#15228#1" expanded="true" />
+            <element signature="e#21754#23201#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/qicq.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="27.88">
+          <caret line="559" column="34" selection-start-line="559" selection-start-column="34" selection-end-line="559" selection-end-column="34" />
+          <folding>
+            <element signature="e#17103#17361#2" expanded="true" />
+            <element signature="e#17502#17760#2" expanded="true" />
+            <element signature="e#17880#18138#2" expanded="true" />
+            <element signature="e#18218#18476#2" expanded="true" />
+            <element signature="e#18617#18875#2" expanded="true" />
+            <element signature="e#18995#19253#2" expanded="true" />
+            <element signature="e#25577#27024#2" expanded="true" />
+            <element signature="e#27179#28623#2" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/qicq.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.34375">
-          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+        <state vertical-scroll-proportion="-2.515625">
+          <caret line="189" column="13" selection-start-line="189" selection-start-column="8" selection-end-line="189" selection-end-column="13" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -932,19 +911,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/qicq.css">
+    <entry file="file://$PROJECT_DIR$/public/js/qicq.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36">
-          <caret line="557" column="1" selection-start-line="557" selection-start-column="1" selection-end-line="557" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.17721519">
+          <caret line="0" column="436" selection-start-line="0" selection-start-column="436" selection-end-line="0" selection-end-column="436" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/qicq.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33164558">
+          <caret line="112" column="54" selection-start-line="112" selection-start-column="54" selection-end-line="112" selection-end-column="54" />
           <folding>
-            <element signature="e#17103#17361#2" expanded="true" />
-            <element signature="e#17502#17760#2" expanded="true" />
-            <element signature="e#17880#18138#2" expanded="true" />
-            <element signature="e#18218#18476#2" expanded="true" />
-            <element signature="e#18617#18875#2" expanded="true" />
-            <element signature="e#18995#19253#2" expanded="true" />
-            <element signature="e#25577#27024#2" expanded="true" />
-            <element signature="e#27179#28623#2" expanded="true" />
+            <marker date="1433898212094" expanded="true" signature="17102:17421" placeholder="..." />
           </folding>
         </state>
       </provider>

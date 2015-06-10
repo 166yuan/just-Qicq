@@ -110,7 +110,7 @@
                                 if(data.from==talkto){
                                     var content=showEmoji(data.content);
                                     var device = navigator.userAgent;
-                                    alert(device);
+                                    console.log(device);
                                     $('#single-chat').append(
                                         "<li class=info-friend><img class=use-img src="+data.image_url+"><span>"+content+"</span></li>" +
                                         "<div class=clear></div>"
