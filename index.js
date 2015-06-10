@@ -38,7 +38,8 @@ tunnel.on("user login",function(user,socket){
     addToList(user,socket);
 });
 tunnel.on("user exist",function (account,password,socket,n){
-    db.newUser(account,password,socket,n);
+    var name=zTool.RandomString(8);
+    db.newUser(account,password,socket,n,name);
 });
 
 app.set('views', path.join(__dirname, 'views'));
@@ -57,6 +58,8 @@ http.listen(3000, function(){
 io.on('connection', function (socket) {
   socket.emit('open');//通知客户端已连接
   console.log("the id of client is:"+socket.id);
+  var address = socket.handshake.address;
+  console.log(address);
   // 打印握手信息
   // console.log(socket.handshake);
   // 构造客户端对象
